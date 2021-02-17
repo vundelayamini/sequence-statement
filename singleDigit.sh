@@ -1,5 +1,5 @@
 #!/bin/bash -x
 
-singleDigit=$(( RANDOM%10 ))
+singleDigit=$(( RANDOM%2 ))
 echo $singleDigit
 

@@ -1,20 +1,18 @@
-#!/bin/bash -x
+#!/bin/bash 
 
-read -p "to convert inches to feet"
-read -p "to convert area of rectangle in mtrs"
-read -p "to convert area in acres"
+feet=12
+inches=42
+meter=3.33
 
-inches=$(( $feet ))
-areaofrectangle=$(( $Length*$Width ))
-area=$(( $width*$Height ))
+cm=$((RANDOM%100))
 
-echo $inches
-echo $areaofrectangle
-echo $area
-
-
-
-
+conversion=$(( $in / $feet ))
+conversion=$(( $feet / $in ))
+conversion=$(( $meter / $feet ))
+conversion=$(( $feet /$meter ))
+echo $mt "meter::"$conversion "feet"
+echo $in "inches::"$conversion "feet"
+echo $ft"feet::"$conversion"meter"
 
 
 
